@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forms</title>
+	</head>
+	<body>
+		<h1>HTML Forms</h1>
+		<hr>
+		<p><form method="POST" action="test.html" id="cred">
+		<br>
+			<input type="submit" name="submit" value="send me">
+		<hr>
+		<br>
+			<label for="f_name">Fist Name</label>
+			<input 
+				type="text"
+				name="f_name"
+				id="f_name"
+				placeholder="First Name" 
+				size="30"
+				maxlength="5"
+				value="test"> 
+		</p>
+		<p>
+			<label for="l_name">Last Name</label>
+			<input type="text" name="l_name" id="l_name"
+			placeholder="Last Name">							<!-- text -->
+		</p>
+		<p>
+			<label for="password">Password</label>
+			<input type="password" name="password" placeholder="password"> <!-- NEVIDIMA PAROLA -->
+		</p>
+		<p>
+			<label for="number">number</label>
+			<input type="number" name="number" id="number"> <!-- chilsa number -->
+		</p>
+		<p><label for="mail">mail</label>
+			<input type="email" name="email" placeholder="Email" required="required"> <!-- EMAIL - required - zadaljitelno -->
+		</p>
+		<p>
+			<label for="date">date</label>
+			<input type="date" name="date"> <!--  date - kalendar data -->
+		</p>
+		<hr>
+		<h2>2ra chast</h2>
+		<label>Send me old news</label>
+		<input type="checkbox" name="old news" id="old news" value="true">
+		<br>
+		<label>Send me last news</label>
+		<input type="checkbox" name="news" id="news" value="true" checked="checked">
+		<hr>
+		<p>
+			<label>CAR</label>
+			<input type="radio" name="group" value="1" checked="checked">
+			<label>SUV</label>
+			<input type="radio" name="group" value="2">
+			<label>BIKE</label>
+			<input type="radio" name="group" value="3">
+		</p>
+		<p>
+			<textarea></textarea> <!-- za pisane na svoboden text -->
+		</p>
+		<p>
+			<select name="select" multiple="multiple"><!-- moje bez multiple -->
+				<option value="1">value1</option>
+				<option value="2">value2</option>
+				<option value="3" selected="selected">value3</option> <!--vinagi izbrano select 3 -->
+				<option value="4">value4</option>
+			</select>
+		</p>
+		<p>
+			<input type="submit" name="submit" value="send">	<!-- plamenakaludova@yahoo.com -->
+		</p>
+		</form>
+	</body>
+</html>
