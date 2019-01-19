@@ -1,0 +1,50 @@
+
+
+
+/* Navigationbar */
+
+.navbar-menu {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    transform: translateX();
+    transition: 0.5s;
+}
+.navbar-menu.active {
+	transform: translateX(0);
+	transition: 0.5s; 
+}
+.navbar-menu .menu-listing { 
+    border: 2px solid blue;
+	padding: 0;
+	margin: 0;
+	text-align: right; 
+}
+.menu-listing li { 
+	display: inline-block;
+	
+}
+.menu-listing li a {
+	background-color: #fff;
+	color: #262626;
+	display: block;
+	font-size: 24px;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	transition: 0.5s;
+}
+.menu-listing li a:hover { 
+	background-color: #262626;
+	color: #fff;transition: 0.5s;
+	}
+
+/* End */
+
+
+
