@@ -1,48 +1,71 @@
 
 
-
 /* Navigationbar */
+.nav-logo {
+	display: block;
+	width: 20%;
+	height: 20vh;
+	float: left;
+	background-color: black;
+}
 
+.nav-logo::after {
+	content: "";
+	clear: both;
+}
+
+.wrap-nav {
+	background-color: rgb(111, 159, 216);
+	width: 100%;
+	height: auto;
+	height: 20vh;
+}
 .navbar-menu {
-    background-color: #fff;
+	display: block;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: 20vh;
     transform: translateX();
     transition: 0.5s;
 }
 .navbar-menu.active {
 	transform: translateX(0);
 	transition: 0.5s; 
+	background-color: rgb(111, 159, 216, 0.6);
 }
 .navbar-menu .menu-listing { 
-    border: 2px solid blue;
 	padding: 0;
 	margin: 0;
-	text-align: right; 
+	text-align: right;
+	margin-top: 10vh;
+	padding-right: 10%;
 }
+
 .menu-listing li { 
 	display: inline-block;
 	
 }
+
+.menu-listing li:hover {
+	background: white;
+	transition: 0.3s;
+}
 .menu-listing li a {
-	background-color: #fff;
 	color: #262626;
 	display: block;
 	font-size: 24px;
 	height: 50px;
 	line-height: 50px;
-	padding: 0 20px;
+	padding: 0 12px;
 	letter-spacing: 1px;
 	text-decoration: none;
 	transition: 0.5s;
 }
-.menu-listing li a:hover { 
-	background-color: #262626;
-	color: #fff;transition: 0.5s;
-	}
+
+
+
 
 /* End */
 
